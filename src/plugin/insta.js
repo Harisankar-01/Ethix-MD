@@ -28,13 +28,13 @@ const instaDownload = async (m, Matrix) => {
         if (mediaType === 'image') {
           const sendImage = {
             image: { url: mediaUrl },
-            caption: caption,
+          
           };
           await Matrix.sendMessage(m.from, sendImage, { quoted: m });
         } else if (mediaType === 'video') {
           const sendVideo = {
             video: { url: mediaUrl },
-            caption: caption,
+            
           };
           await Matrix.sendMessage(m.from,
           sendVideo, { quoted: m });
