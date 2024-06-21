@@ -22,8 +22,8 @@ const instaDownload = async (m, Matrix) => {
 
       if (result.status && result.data.length > 0) {
         const mediaType = result.data[0].type;
-        const mediaUrl = result.data[0].url;
-        const caption = "> © Powered By Ethix-Xsid";
+        const mediaUrl = result.data[0].url; 
+        
         
         if (mediaType === 'image') {
           const sendImage = {
